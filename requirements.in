@@ -1,0 +1,10 @@
+fastapi
+invoke
+opencv-python-headless
+gunicorn
+uvicorn
+python-multipart
+mtcnn
+matplotlib
+numpy
+tensorflow
