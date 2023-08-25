@@ -7,12 +7,13 @@ from io import BytesIO
 
 router = APIRouter(
     prefix="/image",
-    tags = ['image']
+    tags=['image']
 )
 
+
 @router.post("/face-detect")
-async def process_image(file:UploadFile = File(...), detector: FaceDetector = Depends(get_detector)):
+async def process_image(file: UploadFile = File(...), detector: FaceDetector = Depends(get_detector)):
     print(file.filename)
     image_contents = await file.read()
     image_processed = detector.detect(image_contents)
-    return StreamingResponse(BytesIO(image_processed),media_type="image/png")
+    return StreamingResponse(BytesIO(image_processed), media_type="image/png")
