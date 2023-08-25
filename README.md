@@ -43,6 +43,19 @@ fastapi-data-processing/
 └── README.md
 ```
 
+## Examples
+
+
+### Face Detection
+- `POST /image/face-detection`
+<div 
+  style="display:flex; justify-content: space-between;">
+    <img src="./images/people.jpg" alt="Image 1"
+      style="width:48%; box-sizing: border-box" >
+    <img src="./images/people2.png" alt="Image 2"
+      style="width:48%; box-sizing: border-box">
+</div>
+
 
 
 
